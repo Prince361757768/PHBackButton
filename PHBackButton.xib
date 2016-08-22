@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="10116" systemVersion="15B42" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="PHBackButton">
+            <connections>
+                <outlet property="backButton" destination="35f-Cj-iZb" id="nNy-Xj-W6K"/>
+                <outlet property="closeButton" destination="ywU-5c-HEY" id="YZC-cX-uft"/>
+                <outlet property="contentView" destination="iN0-l3-epB" id="l5n-PU-eFx"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB">
+            <rect key="frame" x="0.0" y="0.0" width="100" height="30"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <button opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="249" contentHorizontalAlignment="left" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="35f-Cj-iZb">
+                    <rect key="frame" x="0.0" y="0.0" width="49" height="30"/>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    <inset key="imageEdgeInsets" minX="15" minY="0.0" maxX="0.0" maxY="0.0"/>
+                    <state key="normal" image="ph_new_back.png"/>
+                    <connections>
+                        <action selector="backAction:" destination="-1" eventType="touchUpInside" id="ExK-d2-RhG"/>
+                    </connections>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ywU-5c-HEY">
+                    <rect key="frame" x="51" y="0.0" width="49" height="30"/>
+                    <color key="backgroundColor" red="0.98039215690000003" green="0.43921568630000002" blue="0.33725490200000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <state key="normal" title="关闭"/>
+                    <connections>
+                        <action selector="closeAction:" destination="-1" eventType="touchUpInside" id="3Xb-EL-e6t"/>
+                    </connections>
+                </button>
+            </subviews>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstItem="ywU-5c-HEY" firstAttribute="leading" secondItem="35f-Cj-iZb" secondAttribute="trailing" constant="2" id="4ck-Le-fDB"/>
+                <constraint firstItem="ywU-5c-HEY" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="Kbn-O5-Jov"/>
+                <constraint firstAttribute="trailing" secondItem="ywU-5c-HEY" secondAttribute="trailing" id="SmB-j4-aKL"/>
+                <constraint firstAttribute="bottom" secondItem="35f-Cj-iZb" secondAttribute="bottom" id="Typ-69-p5G"/>
+                <constraint firstItem="ywU-5c-HEY" firstAttribute="width" secondItem="35f-Cj-iZb" secondAttribute="width" id="dEn-Nl-yIp"/>
+                <constraint firstItem="35f-Cj-iZb" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="hVv-pp-UjG"/>
+                <constraint firstAttribute="bottom" secondItem="ywU-5c-HEY" secondAttribute="bottom" id="ler-XL-HWU"/>
+                <constraint firstItem="35f-Cj-iZb" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="vg2-3I-2wQ"/>
+            </constraints>
+            <nil key="simulatedStatusBarMetrics"/>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <point key="canvasLocation" x="319" y="254"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="ph_new_back.png" width="9" height="15"/>
+    </resources>
+</document>
